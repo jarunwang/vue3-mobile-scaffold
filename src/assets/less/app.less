@@ -1,0 +1,166 @@
+@import  "./common/common.less";
+
+#app {
+    font-family: 'SourceHanSansCN','Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    font-size: 18px;
+    content{
+      position: relative;
+    }
+  }
+#nav {
+  padding: 30px;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+.index_list_title{
+  font-size:16px;
+  color: #3D3D3D;
+  font-weight:bold;
+  line-height:33px;
+}
+
+.index_list_title_hot{
+  font-size:16px;
+  color: #3D3D3D;
+  font-weight:bold;
+  line-height:18px;
+}
+
+.index_list_box{
+  border-top:3px solid #f5f5f5;
+  // padding-top:17px;
+  padding-bottom:10px;
+  &:last-child{
+    padding-bottom:0px;
+  }
+}
+.index_list_edit.index_list_box{
+  padding-top:0px;
+}
+.specil_game_list{
+  border-top:0px solid #f5f5f5;
+  border-bottom:3px solid #f5f5f5;
+  background: #000;
+}
+
+.index_list_nobor{
+  border-top: none;
+}
+
+
+.bg_relative{
+  position: relative;
+}
+.special_top{
+  height: 402px;
+}
+.bg_special{
+  height: 168px;
+  padding-top: 47px;
+  position: relative;
+  text-align: left;
+  z-index: 10;
+  img{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+  }
+  &_content{
+      height: 131px;
+      padding: 0 36px 0 4px;
+      overflow: hidden;
+      overflow-y: scroll;
+      font-size: 14px;
+     
+  }
+  &_input{
+      height: 35px;
+      padding: 0 36px 0 4px;
+      margin-top: 11px;
+      line-height: 28px;
+      overflow: hidden;
+      font-size: 14px;
+      line-height: 33px;
+      text-overflow:ellipsis;
+  }
+}
+.reco_item_menu{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 17px 17px 0 0;
+  &_ul{
+    height: 46px;
+    margin: 0 14px;
+    .util_flex_wrap ();
+    align-content : center;
+    font-size:12px;
+    color: #3D3D3D;
+    border-bottom: 1px dashed #D6D6D6;
+    a{
+      display: inline-block;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      // width: 25%;
+    }
+    span{
+      display: inline-block;
+      font-size: 12px;
+      margin-left: 3px;
+    }
+    img{
+      width: auto;
+      height: 17px;
+    }
+    
+  }
+}
+.reco_item_blank{
+  height: 13px;
+}
+.special_pic{
+  height:244px;
+  position: relative;
+  overflow: hidden;
+  &_icon{
+    top: 15px;
+    left: 5px;
+    position: absolute;
+    z-index: 1;
+ }
+  img{
+    width: 100%;
+  }
+  &_intro{
+    position: absolute;
+    bottom: 0px;
+    width: 93%;
+    padding: 10px 15px;
+    font-size:14px;
+    line-height:21px;
+    color: #BABABA;
+    .util_wrap();
+  }
+}
+.new-list{
+  line-height: 20px;
+  transition: top 0.5s;
+}
+.anim{
+  transition: all 0.5s;
+  margin-top: -20px;//高度等于行高
+}

@@ -1,0 +1,161 @@
+@import "./est/all.less";
+
+
+.util_center() {
+    //居中
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.util_flex() {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.util_center_flex() {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+
+.util_vertical_flex() {
+    display: flex;
+    flex-direction: column;
+}
+
+.util_flex_wrap () {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.util_flex_wrap_after () {
+    content: "";
+    flex: auto;
+}
+
+.util_flex_all_center() {
+    text-align: center;
+    align-items: center;
+    /*垂直居中*/
+    justify-content: center;
+    /*水平居中*/
+}
+
+.util_flex_horizon_center() {
+    align-items: center;
+    /*垂直居中*/
+}
+
+.util_flex_horizon_center_left() {
+    /*垂直居中左对齐*/
+    justify-content: center;
+    /*垂直居中*/
+    text-align: left;
+    align-items: left;
+    /*垂直居中*/
+}
+
+
+
+
+.util_background_full() {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+}
+
+.util_background_sprites() {
+    background-repeat: repeat;
+}
+
+@-webkit-keyframes ring {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    25% {
+        -webkit-transform: rotate(90deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+
+    75% {
+        -webkit-transform: rotate(270deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.util_ring() {
+    .animation(ring .8s linear infinite);
+}
+
+.util_wrap() {
+    // text-align-last: justify;
+    white-space: normal;
+    word-break: break-all;
+    word-wrap: break-word; // 只对英文起作用，以单词作为换行依据。
+    text-align: justify; //css英文语句的两端对齐：
+}
+
+.util_nowrap() {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.util_wrap_hide() {
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.util_tramsform() {
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+
+.fonts_lg(@a, @b) {
+    font-size: @a;
+    line-height: @b;
+}
+
+
+.util_transition(@second) {
+    transition: @second;
+    -moz-transition: @second;
+    /* Firefox 4 */
+    -webkit-transition: @second;
+    /* Safari 和 Chrome */
+    -o-transition: @second;
+}
+
+.util_text_shadow(@second) {
+    text-shadow: @second;
+    -moz-text-shadow: @second;
+    /* Firefox 4 */
+    -webkit-text-shadow: @second;
+    /* Safari 和 Chrome */
+    -o-text-shadow: @second;
+}

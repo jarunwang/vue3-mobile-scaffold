@@ -1,0 +1,59 @@
+@import "./est/all.less";
+@import './util.less';
+
+// rem算法 font-size为192px; 1920设计稿。
+
+.global-normalize();
+.global-reset();
+
+//复位//////////////////////////////////////////////////////////////////////////////////////////////////////////
+@version : '1.1';
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: 'MicrosoftYaHei';
+}
+
+iframe {
+    border: none;
+}
+
+a {
+    background: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    color: #8c8c8c;
+}
+
+a:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    /* WebKit browsers */
+    color: #eeeeee;
+}
+
+input:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: #eeeeee;
+}
+
+input::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: #eeeeee;
+}
+
+input:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    color: #eeeeee;
+}
+
+//自定义变量//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@coomon_list_title_color: #3d3d3d;
+@base_title_font_size: 14px;
+@base_red_box_size: 12px;
