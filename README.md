@@ -1,7 +1,9 @@
 # vue3-mobile-scaffold
 ```
-vue3脚手架，这个是提供给移动端能快速搭建项目而使用。整体项目是使用vue(3.0.7) && vuex(4.0.0) && vue-router(4.0.5) && vant(3.0)，兼容es6,7代码规范。
-打包出来项目兼容安卓5.0以上，分多环境配置，该脚手架能满足移动端绝大部分功能开发。有问题可以提issues，我会及时回复。谢谢大家支持。
+vue3脚手架，这个是提供给移动端能快速搭建项目而使用。
+整体项目是使用vue(3.0.7) && vuex(4.0.0) && vue-router(4.0.5) && vant(3.0)，兼容es6,7代码规范。
+打包出来项目兼容安卓5.0以上，分多环境配置，该脚手架能满足移动端绝大部分功能开发。
+有问题可以提issues，我会及时回复。谢谢大家支持。
 ```
 
 ## Project setup 安装项目 需要node12环境以上
@@ -66,6 +68,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 
 ### Tech Stack
+```
  打包构建：Babel Webpack(4.x)
  代码风格：组件化
  UI：vant
@@ -91,6 +94,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  兼容安卓5.0以上：ture
  测试用例：e2e && unit
  错误日志：接入fundebug
+``` 
  
 ### Project Structure
 ```
